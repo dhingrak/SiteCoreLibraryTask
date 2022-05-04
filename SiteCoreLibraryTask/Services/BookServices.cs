@@ -70,6 +70,7 @@ namespace SiteCoreLibraryTask.Services
                     cmd.Parameters.AddWithValue("CreatedAt", book.CreatedAt);
                     cmd.Parameters.AddWithValue("IsAvailable", book.IsAvailable);
                     cmd.Parameters.AddWithValue("Quantity", book.Quantity);
+                    cmd.Parameters.AddWithValue("AvailableQuantity", book.Quantity);
                     cmd.ExecuteNonQuery();
                 }
 

@@ -7,6 +7,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<IBookService, BookServices>();
 builder.Services.AddSingleton<IUserService, UserServices>();
+builder.Services.AddSingleton<IRentalService, RentalServices>();
 
 var app = builder.Build();
 
